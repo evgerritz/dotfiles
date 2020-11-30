@@ -54,14 +54,6 @@ alias wifi='sudo reloadwifi'
 alias pkz='pkill zoom && pkill -f firefox'
 alias sccp='maim -s | xclip -selection clipboard -t image/png -i'
 
-
-# temporary stuff
-alias sshdesktop='ssh -p 28732 evgerritz@2601:183:4300:6620::ed54'
-alias zoo='env TERM=xterm-256color ssh eeg53@node.zoo.cs.yale.edu'
-alias yalevpn='/opt/cisco/anyconnect/bin/vpnui'
-alias calc='zathura ~/IMPORTANT/Stewart\ Calculus\ Early\ Transcendtals\ 8th\ Edition.pdf &'
-alias 201='cd ~/Yale/CPSC201'
-
 #navigation
 alias ..='cd ..' 
 alias ...='cd ../..'
