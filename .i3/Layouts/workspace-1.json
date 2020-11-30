@@ -1,0 +1,68 @@
+{
+    "border": "pixel",
+    "current_border_width": 7,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 356,
+       "width": 642,
+       "x": 0,
+       "y": 0
+    },
+    "name": "terminator1",
+    "percent": 0.5,
+    "swallows": [
+       {
+        "class": "^Alacritty$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 7,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 356,
+               "width": 642,
+               "x": 0,
+               "y": 0
+            },
+            "name": "evgerritz@evgerritz-desktop:~/.i3/Layouts",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^Alacritty$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 7,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 356,
+               "width": 642,
+               "x": 0,
+               "y": 0
+            },
+            "name": "evgerritz@evgerritz-desktop:~",
+            "percent": 0.5,
+            "swallows": [
+               {
+                "class": "^Alacritty$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

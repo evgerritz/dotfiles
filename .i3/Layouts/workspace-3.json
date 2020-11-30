@@ -1,0 +1,20 @@
+{
+    "border": "pixel",
+    "current_border_width": 7,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1259,
+       "width": 1180,
+       "x": 1299,
+       "y": 100
+    },
+    "name": "User 1 - Anki",
+    "percent": 1,
+    "swallows": [
+       {
+        "class": "^Anki$"
+       }
+    ],
+    "type": "con"
+}
+
