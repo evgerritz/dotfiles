@@ -55,10 +55,13 @@ alias wifi='sudo reloadwifi'
 alias pkz='pkill zoom && pkill -f firefox'
 alias sccp='maim -s | xclip -selection clipboard -t image/png -i'
 
+<<<<<<< HEAD
 
 # temporary stuff
 source .tempzshrc
 
+=======
+>>>>>>> origin/main
 #navigation
 alias ..='cd ..' 
 alias ...='cd ../..'
