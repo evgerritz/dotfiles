@@ -16,6 +16,7 @@ compinit
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+
 export PATH="${PATH}:${HOME}/.local/bin/:${HOME}/.bin:${HOME}/.emacs.d/bin:${HOME}/scripts/"
 umask 0002
 export EDITOR="/usr/bin/vim"
@@ -23,6 +24,22 @@ export EDITOR="/usr/bin/vim"
 #ignore immediate duplicates in history
 export HISTCONTROL=ignoredups
 
+#BINDINGS
+
+#edit line from $EDITOR
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+autoload edit-command-line
+zle -N edit-command-line
+bindkey '^X^e' edit-command-line
+
+#switch to vim
+select-vi() { set -o vi }
+zle -N select-vi
+bindkey '^Xj' select-vi
+
+#RUN ON STARTUP
 cd ~
 
 pfetch
@@ -40,6 +57,7 @@ alias free='free -m'                      # show sizes in MB
 
 alias emacs='emacs -nw'
 alias oct='octave --gui'
+alias gtypist='gtypist -c 0,7'
 alias i3conf='vim ~/.i3/config'
 alias update='sudo pacman -Syyu'
 alias clearf='clear && screenfetch'
@@ -53,14 +71,10 @@ alias net='sudo nethogs wlan0'
 alias wifi='sudo reloadwifi'
 alias pkz='pkill zoom && pkill -f firefox'
 alias sccp='maim -s | xclip -selection clipboard -t image/png -i'
+alias py='python'
+alias pyi='python -i'
 
-
-# temporary stuff
-alias sshdesktop='ssh -p 28732 evgerritz@2601:183:4300:6620::ed54'
-alias zoo='env TERM=xterm-256color ssh eeg53@node.zoo.cs.yale.edu'
-alias yalevpn='/opt/cisco/anyconnect/bin/vpnui'
-alias calc='zathura ~/IMPORTANT/Stewart\ Calculus\ Early\ Transcendtals\ 8th\ Edition.pdf &'
-alias 201='cd ~/Yale/CPSC201'
+source .tempzshrc
 
 #navigation
 alias ..='cd ..' 
