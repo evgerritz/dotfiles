@@ -54,6 +54,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
+alias R='R --quiet'
 
 alias emacs='emacs -nw'
 alias oct='octave --gui'
@@ -76,6 +77,13 @@ alias pyi='python -i'
 
 source .tempzshrc
 
+<<<<<<< HEAD
+
+# temporary stuff
+source .tempzshrc
+
+=======
+>>>>>>> origin/main
 #navigation
 alias ..='cd ..' 
 alias ...='cd ../..'
