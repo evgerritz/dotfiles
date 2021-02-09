@@ -74,11 +74,8 @@ alias sccp='maim -s | xclip -selection clipboard -t image/png -i'
 alias py='python'
 alias pyi='python -i'
 
-<<<<<<< HEAD
 source .tempzshrc
 
-=======
->>>>>>> c07a739ea47fff3aeea2ac44d0c8e4f6e9f5d3b4
 #navigation
 alias ..='cd ..' 
 alias ...='cd ../..'
@@ -99,7 +96,7 @@ alias sr="sudo reboot"
 #simply compile and run a single file: (supports C)
 simpc() {
 	case ${1##*.} in
-		c)	gcc $1 -lm -Og -g -o ${1%.c} && ./${1%.c}
+		c)	gcc $1 -lm -Og -g3 -o ${1%.c} && ./${1%.c}
 			;;
 	esac
 }

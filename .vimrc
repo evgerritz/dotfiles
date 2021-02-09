@@ -26,6 +26,8 @@ set relativenumber
 set foldenable
 set foldmethod=manual
 set autoindent
+set cindent
+set backup
 set nowrap
 set sidescroll=1
 set laststatus=2
@@ -33,6 +35,9 @@ set showmode
 set exrc
 set autoread
 set showmatch
+set hlsearch
+set incsearch
+
 set expandtab
 set tabstop=4
 set softtabstop=4
