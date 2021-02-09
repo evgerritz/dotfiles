@@ -21,6 +21,10 @@ Plugin 'vim-airline/vim-airline'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"Plugin settings
+let g:tmpl_author_email = 'evan.gerritz@yale.edu'
+let g:tmpl_author_name = 'Evan Gerritz'
+
 "general settings
 set number
 set relativenumber

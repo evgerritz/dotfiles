@@ -75,15 +75,9 @@ alias sccp='maim -s | xclip -selection clipboard -t image/png -i'
 alias py='python'
 alias pyi='python -i'
 
-source .tempzshrc
-
-<<<<<<< HEAD
-
 # temporary stuff
 source .tempzshrc
 
-=======
->>>>>>> origin/main
 #navigation
 alias ..='cd ..' 
 alias ...='cd ../..'
