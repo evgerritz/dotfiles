@@ -21,12 +21,18 @@ Plugin 'vim-airline/vim-airline'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+"Plugin settings
+let g:tmpl_author_email = 'evan.gerritz@yale.edu'
+let g:tmpl_author_name = 'Evan Gerritz'
+
 "general settings
 set number
 set relativenumber
 set foldenable
 set foldmethod=manual
 set autoindent
+set cindent
+set backup
 set nowrap
 set sidescroll=1
 set laststatus=2
@@ -34,6 +40,9 @@ set showmode
 set exrc
 set autoread
 set showmatch
+set hlsearch
+set incsearch
+
 set expandtab
 set tabstop=4
 set softtabstop=4
