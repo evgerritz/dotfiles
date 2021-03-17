@@ -48,7 +48,8 @@ fortune
 #flag stuff
 alias ls='ls --color=auto'
 alias l.='ls -d .* --color=auto'
-alias ll='ls -l --color=auto'
+alias l='ls -lh --color=auto'
+alias la='ls -lah --color=auto'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -74,6 +75,7 @@ alias pkz='pkill zoom && pkill -f firefox'
 alias sccp='maim -s | xclip -selection clipboard -t image/png -i'
 alias py='python'
 alias pyi='python -i'
+alias vg='valgrind -q --tool=memcheck --partial-loads-ok=yes --leak-check=yes --track-origins=yes'
 
 # temporary stuff
 source .tempzshrc
