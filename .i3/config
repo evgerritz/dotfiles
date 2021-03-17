@@ -130,9 +130,9 @@ bindsym $mod+a workspace 3; exec  anki
 bindsym $mod+n exec nautilus
 bindsym $mod+m workspace 4; exec $term -e cmus;
 bindsym $mod+comma workspace 4; exec spotify;
+bindsym $mod+Shit+apostrophe workspace 5; exec "libreoffice /home/evgerritz/Dropbox/Journal.odt";
 bindsym --release $mod+Shift+s exec --no-startup-id sccp
 bindsym --release $mod+Shift+n exec --no-startup-id nitrogen --restore
-bindsym $mod+apostrophe workspace 5; exec "libreoffice /home/evgerritz/Dropbox/Journal.odt";
 
 
 #dmenu

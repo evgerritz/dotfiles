@@ -55,6 +55,7 @@ set background=dark
 colorscheme palenight
 syn on se title
 set backspace=indent,eol,start
+set viewoptions-=options "so restore view stuff doesn't change directories
 
 "braces auto indent/add match
 inoremap {<cr> {<cr>}<c-o><s-o>
@@ -67,6 +68,11 @@ map! #8 ()OD
 map! #9 {}OD
 "bind F10 to [_]
 map! <F10> []OD
+ 
+"use gn, gp, gd for normal-mode bnext, bprevious, bdelete
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr> 
 
 "rebind capslock to esc on every vim init
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
@@ -75,8 +81,8 @@ au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 set mouse=a
 
 "auto make/loadview
-autocmd BufWinLeave * mkview
-autocmd BufWinEnter * silent loadview
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
 
 "let g:powerline_pycmd = 'py3'
 let g:airline_theme = "palenight"
