@@ -74,6 +74,7 @@ alias pkz='pkill zoom && pkill -f firefox'
 alias sccp='maim -s | xclip -selection clipboard -t image/png -i'
 alias py='python'
 alias pyi='python -i'
+alias db='dropbox.py'
 
 # temporary stuff
 source .tempzshrc
