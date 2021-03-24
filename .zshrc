@@ -76,6 +76,7 @@ alias sccp='maim -s | xclip -selection clipboard -t image/png -i'
 alias py='python'
 alias pyi='python -i'
 alias vg='valgrind -q --tool=memcheck --partial-loads-ok=yes --leak-check=yes --track-origins=yes'
+alias db='dropbox.py'
 
 # temporary stuff
 source .tempzshrc
